@@ -20,12 +20,8 @@
 			$results = DB::executeResultQuery('SELECT body FROM blog_posts');
 			
 			DB::close();
-			
-			foreach ($results as $key => $value) {
-				echo ('<br>' . $value['body']);
-			}
-			
-			$this->masterView->showView(array());
+
+			$this->masterView->showView($results);
 		}
 	}
 ?>
