@@ -1,5 +1,5 @@
 <?php
     abstract class AbstractController {
-		public abstract function invoke();
+		public abstract function invokeController();
 	}
 ?>
