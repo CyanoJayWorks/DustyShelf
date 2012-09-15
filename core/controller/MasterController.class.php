@@ -1,5 +1,5 @@
 <?php
-	class MasterController extends AbstractController {
+	class MasterController extends  AbstractController {
 		private $masterModel = null;
 		
 		function __construct() {

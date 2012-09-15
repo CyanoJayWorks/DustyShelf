@@ -4,7 +4,7 @@
 			
 		}
 		
-		public function showView() {
+		public function showView(array $data) {
 			echo 'Master View Shown</br>';
 		}
 	}
