@@ -4,7 +4,6 @@
 	require(DS_PATH . '/core/env_check.php');
 	require(DS_PATH . '/core/autoloader.php');
 	
-	loadMisc();
 	spl_autoload_register('dustyshelf_autoload');
 	
 	$indexController = new IndexController();
