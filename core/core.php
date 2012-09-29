@@ -7,6 +7,6 @@
 	loadMisc();
 	spl_autoload_register('dustyshelf_autoload');
 	
-	$masterController = new MasterController();
-	$masterController->invokeController();
+	$indexController = new IndexController();
+	$indexController->invokeController();
 ?>
