@@ -11,7 +11,7 @@
 			
 			DB::connect(Config::get('mysql_host'), Config::get('mysql_user'), Config::get('mysql_pass'));
 			
-			DB::selectDataBase('dustyshelf');
+			DB::selectDatabase('dustyshelf');
 			$results = DB::executeResultQuery('SELECT body FROM posts');
 			
 			DB::close();

@@ -6,10 +6,16 @@
 	
 	spl_autoload_register('dustyshelf_class_autoload');
 	
-	Config::set('mysql_user', 'root');
-	Config::set('mysql_pass', '');
-	Config::set('mysql_host', 'localhost');
-	Config::set('mysql_port', '3306');
+	if(!Config::hasKeys(array('mysql_user',
+						  'mysql_pass',
+					      'mysql_host', 
+					      'mysql_port'))) {
+					      		 	
+		Config::set('mysql_user', 'root');
+		Config::set('mysql_pass', '');
+		Config::set('mysql_host', 'localhost');
+		Config::set('mysql_port', '3306');
+	}
 	
 	loadOthers();
 		

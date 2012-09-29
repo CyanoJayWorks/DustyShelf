@@ -4,7 +4,7 @@
 			@mysql_connect($db_host, $db_user, $db_pass) or die("Unable to connect to DB server");
 		}
 		
-		public static function selectDataBase($db_name) {
+		public static function selectDatabase($db_name) {
 			mysql_select_db($db_name) or die("Unable to select database");
 		}
 		
