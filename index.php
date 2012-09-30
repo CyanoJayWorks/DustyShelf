@@ -1,2 +1,3 @@
 <?php
-// placeholder file for Heroku PHP detection
+	require './blog.php';
+?>
