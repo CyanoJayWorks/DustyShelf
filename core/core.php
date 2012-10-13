@@ -15,10 +15,14 @@
 		Config::set('mysql_pass', '');
 		Config::set('mysql_host', 'localhost');
 		Config::set('mysql_port', '3306');
+		
 	}
 	
+	Config::set('blogTitle', 'Ajay\'s Blog');
+	
 	loadOthers();
-		
-	$indexController = new IndexController();
-	$indexController->invokeController();
+	
+	require(DS_PATH . '/core/includes/view.php') 
+	//$indexController = new IndexController();
+	//$indexController->invokeController();
 ?>
