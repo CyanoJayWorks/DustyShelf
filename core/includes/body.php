@@ -1,3 +1,3 @@
-<?php
-
-?>
+<div id="body">
+	
+</div>
