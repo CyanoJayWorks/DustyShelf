@@ -22,10 +22,24 @@ body {
 
 .header img {
 	height: 205px;
-	width: 75%;
+	width: 59%;
 	
 	border-top: #808080 15px groove;
 	border-bottom: #808080 15px groove;
+}
+
+.blogbody {
+	width: 50%;
+	margin-top: 3%;
+	margin-left: 15%;
+
+}
+
+.blogpost {
+	background-color: #C2C2C2;
+	
+	
+	font-family: Verdana;
 }
 
 .footer {

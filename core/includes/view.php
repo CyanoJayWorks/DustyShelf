@@ -19,8 +19,17 @@
 			<img src="./core/assets/FBCover.jpg" />
 		</div>
 		
-		<div class="body">
-			
+		<div class="blogbody">
+			<?php
+				DB::selectDatabase('dustyshelf');
+				$results = DB::executeResultQuery('SELECT body FROM posts');
+				
+				foreach ($results as $key => $value) {
+					echo '<div class="blogpost">';
+					echo '<br>' . $value['body'];
+					echo '</div>';
+				}
+			?>
 		</div>
 		
 		<div class="sidebar">
