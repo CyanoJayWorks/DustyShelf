@@ -19,21 +19,25 @@
 			<img src="./core/assets/FBCover.jpg" />
 		</div>
 		
-		<div class="blogbody">
-			<?php
-				DB::selectDatabase('dustyshelf');
-				$results = DB::executeResultQuery('SELECT body FROM posts');
-				
-				foreach ($results as $key => $value) {
-					echo '<div class="blogpost">';
-					echo '<br>' . $value['body'];
-					echo '</div>';
-				}
-			?>
-		</div>
-		
-		<div class="sidebar">
+		<div id="content">
+			<div class="blogbody">
+				<?php
+					DB::selectDatabase('dustyshelf');
+					$results = DB::executeResultQuery('SELECT body FROM posts');
+					
+					foreach ($results as $key => $value) {
+						echo '<div class="blogpost">';
+						echo $value['body'];
+						echo '</div>';
+					}
+				?>
+			</div>
 			
+			<div class="sidebar">
+				<?php
+					echo Config::get('blog_desc'); 
+				?>
+			</div>
 		</div>
 		
 		<div class="footer">
