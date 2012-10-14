@@ -13,20 +13,20 @@
     </head>
     <body>
     	
-	    <div id="header">
+	    <div class="header">
 			<h2><?php echo Config::get('blog_title') ?></h2>
 			<h4><?php echo Config::get('blog_title_desc') ?></h4>
 		</div>
 		
-		<div id="body">
+		<div class="body">
 			
 		</div>
 		
-		<div id="sidebar">
+		<div class="sidebar">
 			
 		</div>
 		
-		<div id="footer">
+		<div class="footer">
 			<hr />
 			<p> <?php echo Config::get('blog_cpyrt'); ?></p>
 		</div>

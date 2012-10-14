@@ -2,25 +2,25 @@ body {
 	background-color: #E6E6E6
 }
 
-#header {
+.header {
 	margin-top: 5%;
 	margin-left: 5%;
     
 	font-family: Verdana;
 }
 
-#header h2 {
+.header h2 {
 	color: black;
 }
 
-#header h4 {
+.header h4 {
 	color: gray;
 	
 	font-size: 14px;
 	font-style: italic;
 }
 
-#footer {
+.footer {
 	width: 235px;
     margin: 0 auto;
     
