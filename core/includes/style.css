@@ -1,3 +1,15 @@
 body {
+	margin:0;
+	padding:0;
+	
+	background-color: #E5EEFF
+}
 
+#footer {
+	width: 235px;
+    margin: 0 auto;
+    
+    color: rgb(163,163,163);
+	font-family: Verdana;
+	font-size: 10px;
 }

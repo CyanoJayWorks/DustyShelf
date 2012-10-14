@@ -10,14 +10,14 @@
         </title>
         <meta name="description" content="">
         
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="./core/includes/style.css"/>
     </head>
     <body>
     	<?php 
-    		include 'header.php';
-			include 'body.php';
-			include 'sidebar.php';
-			include 'footer.php';
+    		include_once 'header.php';
+			include_once 'body.php';
+			include_once 'sidebar.php';
+			include_once 'footer.php';
     	?>
     </body>
 </html>

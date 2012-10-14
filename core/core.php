@@ -22,7 +22,7 @@
 	
 	loadOthers();
 	
-	require(DS_PATH . '/core/includes/view.php') 
+	require_once(DS_PATH . '/core/includes/view.php') 
 	//$indexController = new IndexController();
 	//$indexController->invokeController();
 ?>
