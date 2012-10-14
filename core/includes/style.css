@@ -1,15 +1,30 @@
 body {
-	margin:0;
-	padding:0;
+	background-color: #E6E6E6
+}
+
+#header {
+	margin-top: 5%;
+	margin-left: 5%;
+    
+	font-family: Verdana;
+}
+
+#header h2 {
+	color: black;
+}
+
+#header h4 {
+	color: gray;
 	
-	background-color: #E5EEFF
+	font-size: 14px;
+	font-style: italic;
 }
 
 #footer {
 	width: 235px;
     margin: 0 auto;
     
-    color: rgb(163,163,163);
+    color: rgb(123,123,123);
 	font-family: Verdana;
 	font-size: 10px;
 }

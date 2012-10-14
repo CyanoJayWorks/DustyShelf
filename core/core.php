@@ -20,7 +20,7 @@
 	
 	Config::set('blog_nav_title', 'Ajay\'s Blog');
 	Config::set('blog_title', 'Ajay\'s Blog');
-	Config::set('blog_title_desc', 'The Home and Haven of Ajay G.');
+	Config::set('blog_title_desc', 'His Home and Haven');
 	Config::set('blog_header_img', './core/assets/FBCover.jpg');
 	
 	DB::connect(Config::get('mysql_host'), Config::get('mysql_user'), Config::get('mysql_pass'));
