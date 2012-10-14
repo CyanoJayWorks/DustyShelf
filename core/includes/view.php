@@ -12,11 +12,24 @@
         <link rel="stylesheet" type="text/css" href="./core/includes/style.css"/>
     </head>
     <body>
-    	<?php 
-    		include_once 'header.php';
-			include_once 'body.php';
-			include_once 'sidebar.php';
-			include_once 'footer.php';
-    	?>
+    	
+	    <div id="header">
+			<h2><?php echo Config::get('blog_title') ?></h2>
+			<h4><?php echo Config::get('blog_title_desc') ?></h4>
+		</div>
+		
+		<div id="body">
+			
+		</div>
+		
+		<div id="sidebar">
+			
+		</div>
+		
+		<div id="footer">
+			<hr />
+			<p> <?php echo Config::get('blog_cpyrt'); ?></p>
+		</div>
+
     </body>
 </html>
