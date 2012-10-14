@@ -4,8 +4,7 @@
         <meta charset="utf-8">
         <title>
         	<?php
-        		$title = Config::get('blogTitle');
-				echo $title;
+        		echo Config::get('blog_nav_title');
         	?>
         </title>
         <meta name="description" content="">

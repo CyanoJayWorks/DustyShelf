@@ -18,7 +18,10 @@
 		
 	}
 	
-	Config::set('blogTitle', 'Ajay\'s Blog');
+	Config::set('blog_nav_title', 'Ajay\'s Blog');
+	Config::set('blog_title', 'Ajay\'s Blog');
+	Config::set('blog_title_desc', 'The Home and Haven of Ajay G.');
+	Config::set('blog_header_img', './core/assets/FBCover.jpg');
 	
 	loadOthers();
 	
