@@ -21,7 +21,7 @@
 	Config::set('blog_nav_title', 'Ajay\'s Blog');
 	Config::set('blog_title', 'Ajay\'s Blog');
 	Config::set('blog_title_desc', 'The one and only');
-	Config::set('blog_desc', 'This blog is about all the awesome things ever thought of everywhere.');
+	Config::set('blog_desc', 'An awesome blog about awesome stuff.');
 	Config::set('blog_cpyrt', '&copy; 2012 Ajay Gopinath. All rights reserved.');
 	Config::set('blog_header_img', './core/assets/FBCover.jpg');
 	
