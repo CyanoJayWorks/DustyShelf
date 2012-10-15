@@ -14,7 +14,10 @@
     <body>
     	
 	    <div class="header">
-			<h2><?php echo Config::get('blog_title') ?></h2>
+			<a href="<?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; echo $url;?>"> 
+				<?php echo Config::get('blog_title') ?>
+			</a>
+			
 			<h4><?php echo Config::get('blog_title_desc') ?></h4>
 			<img src="./core/assets/FBCover.jpg" />
 		</div>
