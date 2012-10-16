@@ -13,10 +13,9 @@ body {
 .header a {
 	color: #525252;
 	
-	opacity: 1;
-    transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
+    transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -webkit-transition: color .2s ease-in-out;
     
     display: inline;
     font-size: 28px;
@@ -24,7 +23,7 @@ body {
 }
 
 .header a:hover {
-    opacity: 0.5;
+    color: #B3B3B3;
 }
       
 .header h4 {
@@ -44,6 +43,15 @@ body {
 	border-bottom: #808080 15px solid;
 	
 	border-radius: 3px;
+	
+	opacity: 1;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+}
+
+.header img:hover {
+	opacity: 0.7;
 }
 
 #content {
@@ -77,7 +85,6 @@ body {
     
     border-radius: 3px;
     
-    opacity: 1;
     transition: background-color .2s ease-in-out;
     -moz-transition: background-color .2s ease-in-out;
     -webkit-transition: background-color .2s ease-in-out;
@@ -87,7 +94,7 @@ body {
 }
 
 .blogpost:hover {
-    background-color: #CCD9FF;
+    background-color: #F2F2F2;
 }
 
 .sidebar {
@@ -107,7 +114,6 @@ body {
     
     border-radius: 3px;
     
-    opacity: 1;
     transition: background-color .2s ease-in-out;
     -moz-transition: background-color .2s ease-in-out;
     -webkit-transition: background-color .2s ease-in-out;
@@ -117,7 +123,7 @@ body {
 }
 
 .sidebar:hover {
-    background-color: #FFB3B3;
+    background-color: #D6D6D6;
 }
 
 .footer {

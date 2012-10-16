@@ -19,7 +19,7 @@
 			</a>
 			
 			<h4><?php echo Config::get('blog_title_desc') ?></h4>
-			<img src="<?php echo Config::get('blog_header_img') ?>" />
+			<img src="<?php echo Config::get('blog_header_img') ?>" href="<?php echo Config::get('blog_header_img') ?>"/>
 		</div>
 		
 		<div id="content">
