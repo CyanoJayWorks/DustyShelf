@@ -3,9 +3,6 @@ body {
 }
 
 .header {
-	margin-top: 3%;
-	margin-left: 15%;
-    
 	font-family: Verdana;
 	line-height: 2px;
 }
@@ -33,7 +30,7 @@ body {
 	font-style: italic;
 }
 
-.header img {
+#content img {
 	height: 205px;
 	width: 80%;
 	
@@ -50,11 +47,16 @@ body {
     -webkit-transition: opacity .2s ease-in-out;
 }
 
-.header img:hover {
+#content img:hover {
 	opacity: 0.7;
 }
 
 #content {
+	margin-top: 3%;
+	margin-left: 15%;
+}
+
+#blogcontent {
 	overflow: hidden;
 }
 
@@ -62,7 +64,6 @@ body {
 	width: 50%;
 	
 	margin-top: 2%;
-	margin-left: 15%;
 	margin-right: 1%;
 	margin-bottom: 2%;
 	
@@ -70,12 +71,12 @@ body {
 }
 
 .blogpost {
-    margin-bottom: 13px;
+    margin-bottom: 3%;
     
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 4px;
-    padding-bottom: 5px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     
     background-color: #D6D6D6;
 	color: #262626;
@@ -109,11 +110,11 @@ body {
 }
 
 .sidebar {
-	width: 15%;
+	width: 25%;
 
 	margin-top: 2%;
 	
-	padding: 10px;
+	padding: 2%;
 	
 	overflow: hidden;
 	
@@ -138,12 +139,12 @@ body {
 }
 
 .footer {
-	width: 235px;
-	
     margin: 0 auto;
     
     color: rgb(123,123,123);
     
 	font-family: Verdana;
 	font-size: 10px;
+	
+	text-decoration: none;
 }
