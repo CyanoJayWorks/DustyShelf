@@ -19,7 +19,7 @@
 			</a>
 			
 			<h4><?php echo Config::get('blog_title_desc') ?></h4>
-			<img src="./core/assets/FBCover.jpg" />
+			<img src="<?php echo Config::get('blog_header_img') ?>" />
 		</div>
 		
 		<div id="content">
