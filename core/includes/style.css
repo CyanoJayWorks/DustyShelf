@@ -4,7 +4,7 @@ body {
 
 .header {
 	font-family: Verdana;
-	line-height: 2px;
+	line-height: 5px;
 }
 
 .header a {
@@ -30,7 +30,7 @@ body {
 	font-style: italic;
 }
 
-#content img {
+#headerimg {
 	height: 205px;
 	width: 80%;
 	
@@ -47,7 +47,7 @@ body {
     -webkit-transition: opacity .2s ease-in-out;
 }
 
-#content img:hover {
+#headerimg:hover {
 	opacity: 0.7;
 }
 

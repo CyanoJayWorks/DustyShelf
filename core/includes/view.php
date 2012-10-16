@@ -22,7 +22,7 @@
 			</div>
 			
 			<div id="blogcontent">
-				<img src="<?php echo Config::get('blog_header_img') ?>" href="<?php echo Config::get('blog_header_img') ?>"/>
+				<img id="headerimg" src="<?php echo Config::get('blog_header_img') ?>" href="<?php echo Config::get('blog_header_img') ?>"/>
 				<div class="blogbody">
 					<?php
 						$results = DB::executeResultQuery('SELECT body,title,tags FROM posts');
