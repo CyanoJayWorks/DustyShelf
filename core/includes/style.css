@@ -98,9 +98,14 @@ body {
     background-color: #F2F2F2;
 }
 
+.blogposttitle {
+	font-size: 12px;
+	line-height: 0.5;
+}
+
 .blogposttag {
 	font-size: 10px;
-	line-height: 3px;
+	line-height: 0.5;
 }
 
 .sidebar {
