@@ -25,7 +25,6 @@
 		<div id="content">
 			<div class="blogbody">
 				<?php
-					DB::selectDatabase('dustyshelf');
 					$results = DB::executeResultQuery('SELECT body FROM posts');
 					
 					foreach ($results as $key => $value) {

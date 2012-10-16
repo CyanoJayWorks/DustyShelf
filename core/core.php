@@ -26,6 +26,7 @@
 	Config::set('blog_header_img', './core/assets/FBCover.jpg');
 	
 	DB::connect(Config::get('mysql_host'), Config::get('mysql_user'), Config::get('mysql_pass'));
+	DB::selectDatabase('dustyshelf');
 	
 	//BlogInfo::refreshInfo();
 	
