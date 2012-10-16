@@ -61,7 +61,7 @@ body {
 .blogbody {
 	width: 50%;
 	
-	margin-top: 3%;
+	margin-top: 2%;
 	margin-left: 15%;
 	margin-right: 1%;
 	margin-bottom: 2%;
@@ -70,7 +70,7 @@ body {
 }
 
 .blogpost {
-    margin-top: 13px;
+    margin-bottom: 13px;
     
     padding-left: 10px;
     padding-right: 10px;
@@ -111,7 +111,7 @@ body {
 .sidebar {
 	width: 15%;
 
-	margin-top: 4%;
+	margin-top: 2%;
 	
 	padding: 10px;
 	
