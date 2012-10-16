@@ -25,11 +25,12 @@
 		<div id="content">
 			<div class="blogbody">
 				<?php
-					$results = DB::executeResultQuery('SELECT body,title FROM posts');
+					$results = DB::executeResultQuery('SELECT body,title,tags FROM posts');
 					
 					foreach ($results as $key => $value) {
 						echo '<div class="blogpost">';
-						echo '<h4>' . $value['title'] . '</h4>' . '<hr />';
+						echo '<h4>' . $value['title'] . '</h4>'; 
+						echo $value['tags'] . '<hr />';
 						echo $value['body'];
 						echo '</div>';
 					}
