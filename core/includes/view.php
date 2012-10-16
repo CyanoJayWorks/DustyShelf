@@ -29,8 +29,10 @@
 					
 					foreach ($results as $key => $value) {
 						echo '<div class="blogpost">';
-						echo '<h4>' . $value['title'] . '</h4>'; 
+						echo '<h4>' . $value['title'] . '</h4>';
+						echo '<div class="blogposttag">';
 						echo $value['tags'] . '<hr />';
+						echo '</div>';
 						echo $value['body'];
 						echo '</div>';
 					}
