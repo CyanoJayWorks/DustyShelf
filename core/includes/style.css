@@ -14,9 +14,9 @@ body {
 	color: #525252;
 	
 	opacity: 1;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
     
     display: inline;
     font-size: 28px;
@@ -77,8 +77,17 @@ body {
     
     border-radius: 3px;
     
+    opacity: 1;
+    transition: background-color .2s ease-in-out;
+    -moz-transition: background-color .2s ease-in-out;
+    -webkit-transition: background-color .2s ease-in-out;
+    
 	font-family: Verdana;
 	font-size: smaller;
+}
+
+.blogpost:hover {
+    background-color: #CCD9FF;
 }
 
 .sidebar {
@@ -98,8 +107,17 @@ body {
     
     border-radius: 3px;
     
+    opacity: 1;
+    transition: background-color .2s ease-in-out;
+    -moz-transition: background-color .2s ease-in-out;
+    -webkit-transition: background-color .2s ease-in-out;
+    
     font-family: Verdana;
     font-size: small;
+}
+
+.sidebar:hover {
+    background-color: #FFB3B3;
 }
 
 .footer {
