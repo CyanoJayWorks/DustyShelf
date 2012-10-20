@@ -10,7 +10,7 @@
         </title>
         <meta name="description" content="">
         
-        <link rel="stylesheet" type="text/css" href="./core/includes/style.css"/>
+        <link rel="stylesheet" type="text/css" href="/dustyshelf/core/includes/style.css"/>
     </head>
     <body>
     	<div id="content">
