@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <title>
         	<?php
-        		echo Config::get('blog_nav_title');
+        		BlogInfo::refreshInfo();
+        		echo BlogInfo::getBlogNavTitle();
         	?>
         </title>
         <meta name="description" content="">
@@ -15,14 +16,14 @@
     	<div id="content">
 		    <div class="header">
 				<a href="<?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; echo $url;?>"> 
-					<?php echo Config::get('blog_title') ?>
+					<?php  echo BlogInfo::getBlogTitle(); ?>
 				</a>
 				
-				<h4><?php echo Config::get('blog_title_desc') ?></h4>
+				<h4><?php echo BlogInfo::getBlogTitleDescription(); ?></h4>
 			</div>
 			
 			<div id="blogcontent">
-				<img id="headerimg" src="<?php echo Config::get('blog_header_img') ?>" href="<?php echo Config::get('blog_header_img') ?>"/>
+				<img id="headerimg" src="<?php echo BlogInfo::getBlogHeaderImage(); ?>" href="<?php echo BlogInfo::getBlogHeaderImage(); ?>"/>
 				<div class="blogbody">
 					<?php
 						$results = DB::executeResultQuery('SELECT body,title,tags FROM posts');
@@ -43,7 +44,7 @@
 				
 				<div class="sidebar">
 					<?php
-						echo Config::get('blog_desc'); 
+						echo BlogInfo::getBlogDescription();
 					?>
 				</div>
 			</div>
@@ -51,7 +52,7 @@
 		
 		<div class="footer">
 			<hr />
-			<p> <?php echo Config::get('blog_cpyrt'); ?></p>
+			<p> <?php echo BlogInfo::getBlogCopyright(); ?></p>
 		</div>
 		
     </body>

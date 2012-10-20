@@ -1,31 +1,43 @@
 <?php 
 	class BlogInfo {
-		private $blogNavTitle = null;
-		private $blogTitle = null;
-		private $blogTitleDesc = null;
-		private $blogDesc = null;
+		private static $blogNavTitle = null;
+		private static $blogTitle = null;
+		private static $blogTitleDesc = null;
+		private static $blogDesc = null;
+		private static $blogCopyright = null;
+		private static $blogHeaderImage = null;
 		
 		public static function refreshInfo() {
-			$blogNavTitle = DB::executeSingleResultQuery('SELECT * FROM meta WHERE meta_key=\'blog_nav_title\'');
-			$blogTitle = DB::executeSingleResultQuery('SELECT * FROM meta WHERE meta_key=\'blog_title\'');
-			$blogTitleDesc = DB::executeSingleResultQuery('SELECT * FROM meta WHERE meta_key=\'blog_title_desc\'');
-			$blogDesc = DB::executeSingleResultQuery('SELECT * FROM meta WHERE meta_key=\'blog_desc\'');
+			self::$blogNavTitle = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_nav_title\'')['meta_data'];
+			self::$blogTitle = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_title\'')['meta_data'];
+			self::$blogTitleDesc = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_title_desc\'')['meta_data'];
+			self::$blogDesc = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_desc\'')['meta_data'];
+			self::$blogCopyright = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_cpryt\'')['meta_data'];
+			self::$blogHeaderImage = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_header_uri\'')['meta_data'];
 		}
 		
 		public static function getBlogNavTitle() {
-			return $blogNavTitle;
+			return self::$blogNavTitle;
 		}
 		
 		public static function getBlogTitle() {
-			return $blogTitle;
+			return self::$blogTitle;
 		}
 		
 		public static function getBlogTitleDescription() {
-			return $blogTitleDesc;
+			return self::$blogTitleDesc;
 		}
 		
 		public static function getBlogDescription() {
-			return $blogDesc;
+			return self::$blogDesc;
+		}
+		
+		public static function getBlogCopyright() {
+			return self::$blogCopyright;
+		}
+		
+		public static function getBlogHeaderImage() {
+			return self::$blogHeaderImage;
 		}
 	}
 ?>

@@ -33,9 +33,9 @@
 		}
 		
 		public static function executeSingleResultQuery($query) {
-			$data = mysql_fetch_row(mysql_query($query));
+			$data = mysql_fetch_assoc(mysql_query($query));
 			
-			return $data[0];
+			return $data;
 		}
 				
 		public static function close() {
