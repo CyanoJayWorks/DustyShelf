@@ -12,7 +12,7 @@
 			self::$blogTitle = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_title\'')['meta_data'];
 			self::$blogTitleDesc = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_title_desc\'')['meta_data'];
 			self::$blogDesc = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_desc\'')['meta_data'];
-			self::$blogCopyright = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_cpryt\'')['meta_data'];
+			self::$blogCopyright = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_cpyrt\'')['meta_data'];
 			self::$blogHeaderImage = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_header_uri\'')['meta_data'];
 		}
 		
