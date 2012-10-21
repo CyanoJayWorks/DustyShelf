@@ -21,14 +21,18 @@
 	DB::selectDatabase(Config::get('mysql_db'));
 	
 	//loadOthers();
-		
-	echo 'controller: ' . $_GET['c'] . '<br />';
-	echo 'action: ' . $_GET['a'] . '<br />';
-	echo 'input: ' . $_GET['i'] . '<br />';
+	if(!isset($_GET['c']) || !isset($_GET['a']))  {
+		Feedback::do404();
+		die();
+	}
 	
 	$controller = $_GET['c'];
 	$action = $_GET['a'];
-	$input = $_GET['i'];
+	$input = isset($_GET['i']) ? $_GET['i'] : '';
+	
+	echo 'controller: ' . $controller . '<br />';
+	echo 'action: ' . $action . '<br />';
+	echo 'input: ' . $input . '<br />';
 	
 	Router::doRouting($controller, $action, $input);
 	
