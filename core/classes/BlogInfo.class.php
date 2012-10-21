@@ -8,12 +8,19 @@
 		private static $blogHeaderImage = null;
 		
 		public static function refreshInfo() {
-			self::$blogNavTitle = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_nav_title\'')['meta_data'];
-			self::$blogTitle = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_title\'')['meta_data'];
-			self::$blogTitleDesc = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_title_desc\'')['meta_data'];
-			self::$blogDesc = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_desc\'')['meta_data'];
-			self::$blogCopyright = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_cpyrt\'')['meta_data'];
-			self::$blogHeaderImage = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_header_uri\'')['meta_data'];
+			$navTitle = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_nav_title\'');
+			$title = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_title_desc\'');
+			$titleDesc = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_title_desc\'');
+			$desc = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_desc\'');
+			$copyright = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_cpyrt\'');
+			$headerImage = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_header_uri\'');
+			
+			self::$blogNavTitle = $navTitle['meta_data'];
+			self::$blogTitle = $title['meta_data'];
+			self::$blogTitleDesc = $titleDesc['meta_data'];
+			self::$blogDesc = $desc['meta_data'];
+			self::$blogCopyright = $copyright['meta_data'];
+			self::$blogHeaderImage = $headerImage['meta_data'];
 		}
 		
 		public static function getBlogNavTitle() {
