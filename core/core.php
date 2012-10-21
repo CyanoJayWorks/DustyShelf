@@ -11,7 +11,7 @@
 					      'mysql_host', 
 					      'mysql_port'))) {
 					      	
-		if(getenv('MYSQL_HOST') != '') {	      		 	
+		if(strlen(getenv('MYSQL_HOST')) != 0) {	      		 	
 			Config::set('mysql_user', getenv('MYSQL_USERNAME'));
 			Config::set('mysql_pass', getenv('MYSQL_PASSWORD'));
 			Config::set('mysql_host', getenv('MYSQL_DB_HOST'));
