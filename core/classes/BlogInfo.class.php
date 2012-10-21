@@ -9,7 +9,7 @@
 		
 		public static function refreshInfo() {
 			$navTitle = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_nav_title\'');
-			$title = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_title_desc\'');
+			$title = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_title\'');
 			$titleDesc = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_title_desc\'');
 			$desc = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_desc\'');
 			$copyright = DB::executeSingleResultQuery('SELECT meta_data FROM meta WHERE meta_key=\'blog_cpyrt\'');
