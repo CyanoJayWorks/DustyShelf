@@ -9,7 +9,7 @@
 	 * <Directory "YOUR DOCUMENT ROOT DIRECTORY HERE">
 		     RewriteEngine On
 		     RewriteCond $1 !\.(js|ico|gif|jpg|png|css|html|swf|mp3|wav|txt)$
-		     RewriteRule ^([A-Za-z0-9]+)/([A-Za-z0-9]+)/([A-Za-z0-9]*)?$ /PATH/TO/blog.php?c=$1&a=$2&i=$3 [NC,L] 
+		     RewriteRule ^([A-Za-z0-9]+)/([A-Za-z0-9]+)/([A-Za-z0-9]*)?$ /PATH/TO/index.php?c=$1&a=$2&i=$3 [NC,L] 
 	   </Directory>
 	 * ==============================
 	 */
