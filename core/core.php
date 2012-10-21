@@ -25,6 +25,8 @@
 			Config::set('mysql_db', 'dustyshelf');
 		}
 	}
+						  
+	echo Config::get('mysql_host');
 	
 	DB::connect(Config::get('mysql_host'), Config::get('mysql_user'), Config::get('mysql_pass'));
 	DB::selectDatabase(Config::get('mysql_db'));
