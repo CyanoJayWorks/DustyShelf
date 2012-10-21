@@ -21,6 +21,7 @@
 	DB::selectDatabase(Config::get('mysql_db'));
 	
 	//loadOthers();
+	
 	if(!isset($_GET['c']) || !isset($_GET['a']))  {
 		Feedback::do404();
 		die();
