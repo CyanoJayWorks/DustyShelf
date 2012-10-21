@@ -21,9 +21,18 @@
 	DB::selectDatabase(Config::get('mysql_db'));
 	
 	loadOthers();
+		
+	echo 'controller: ' . $_GET['c'] . '<br />';
+	echo 'action: ' . $_GET['a'] . '<br />';
+	echo 'input: ' . $_GET['i'] . '<br />';
 	
-	require_once(DS_PATH . '/core/includes/view.php');
+	$controller = $_GET['c'];
+	$action = $_GET['a'];
+	$input = $_GET['i'];
+	
+	Router::doRouting($controller, $action, $input);
+	
+	//require_once(DS_PATH . '/core/includes/view.php');
 	
 	DB::close();
-
 ?>

@@ -20,9 +20,5 @@
 	 * ==============================
 	 */
 	
-	echo 'controller: ' . $_GET['c'] . '<br />';
-	echo 'action: ' . $_GET['a'] . '<br />';
-	echo 'input: ' . $_GET['i'] . '<br />';
-	
 	require(DS_PATH . '/core/core.php');
 ?>
