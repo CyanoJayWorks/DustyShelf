@@ -20,7 +20,7 @@
 	DB::connect(Config::get('mysql_host'), Config::get('mysql_user'), Config::get('mysql_pass'));
 	DB::selectDatabase(Config::get('mysql_db'));
 	
-	loadOthers();
+	//loadOthers();
 		
 	echo 'controller: ' . $_GET['c'] . '<br />';
 	echo 'action: ' . $_GET['a'] . '<br />';
