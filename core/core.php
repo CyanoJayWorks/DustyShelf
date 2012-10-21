@@ -23,21 +23,22 @@
 	//loadOthers();
 	
 	if(!isset($_GET['c']) || !isset($_GET['a']))  {
-		Feedback::do404();
-		die();
+		//Feedback::do404();
+		//die();
+	} else {
+	
+		$controller = $_GET['c'];
+		$action = $_GET['a'];
+		$input = isset($_GET['i']) ? $_GET['i'] : '';
+		
+		echo 'controller: ' . $controller . '<br />';
+		echo 'action: ' . $action . '<br />';
+		echo 'input: ' . $input . '<br />';
+		
+		//Router::doRouting($controller, $action, $input);
 	}
 	
-	$controller = $_GET['c'];
-	$action = $_GET['a'];
-	$input = isset($_GET['i']) ? $_GET['i'] : '';
-	
-	echo 'controller: ' . $controller . '<br />';
-	echo 'action: ' . $action . '<br />';
-	echo 'input: ' . $input . '<br />';
-	
-	Router::doRouting($controller, $action, $input);
-	
-	//require_once(DS_PATH . '/core/includes/view.php');
+	require_once(DS_PATH . '/core/includes/view.php');
 	
 	DB::close();
 ?>
