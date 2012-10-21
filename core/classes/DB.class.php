@@ -1,11 +1,12 @@
 <?php 
 	class DB {
 		private static $isConnected;
+		private static $connection;
 		
 		public static function connect($db_host, $db_user, $db_pass) {
 			if(self::$isConnected) return;
 			
-			if(!@mysql_connect($db_host, $db_user, $db_pass)) {
+			if(!(self::$connection = @mysql_connect($db_host, $db_user, $db_pass))) {
 				die("Unable to connect to DB server");
 				self::$isConnected = false;
 			} else {
@@ -40,7 +41,7 @@
 				
 		public static function close() {
 			if(!self::$isConnected)
-				return mysql_close();
+				return mysql_close(self::$connection);
 		}
 		
 		public static function isConnected() {

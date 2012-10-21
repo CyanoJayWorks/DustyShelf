@@ -1,6 +1,5 @@
 <?php
-	//echo '<h1 align=center>Welcome to DustyShelf!</h1>';
-	
+
 	require(DS_PATH . '/core/env_check.php');
 	require(DS_PATH . '/core/autoloader.php');
 	
@@ -21,13 +20,10 @@
 	DB::connect(Config::get('mysql_host'), Config::get('mysql_user'), Config::get('mysql_pass'));
 	DB::selectDatabase(Config::get('mysql_db'));
 	
-	//BlogInfo::refreshInfo();
-	
 	loadOthers();
 	
 	require_once(DS_PATH . '/core/includes/view.php');
 	
 	DB::close();
-	//$indexController = new IndexController();
-	//$indexController->invokeController();
+
 ?>
