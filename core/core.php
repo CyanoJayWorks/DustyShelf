@@ -11,7 +11,9 @@
 					      'mysql_host', 
 					      'mysql_port'))) {
 					      	
-		if(strlen(getenv('MYSQL_HOST')) != 0) {	      		 	
+		$isPHPFog = getenv('MYSQL_HOST');
+			      	
+		if(!empty($isPHPFog)) {	      		 	
 			Config::set('mysql_user', getenv('MYSQL_USERNAME'));
 			Config::set('mysql_pass', getenv('MYSQL_PASSWORD'));
 			Config::set('mysql_host', getenv('MYSQL_DB_HOST'));
