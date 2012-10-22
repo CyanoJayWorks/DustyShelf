@@ -35,7 +35,10 @@
 		echo 'action: ' . $action . '<br />';
 		echo 'arguments: ' . $args . '<br />';
 		
-		if($controller == 'blog') require_once(DS_PATH . '/core/includes/view.php');
+		if($controller == 'blogtest')  {
+			require_once(DS_PATH . '/core/includes/view.php');
+			die();
+		}
 		
 		Router::doRouting($controller, $action, $args);
 	}
