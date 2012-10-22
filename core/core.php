@@ -23,8 +23,8 @@
 	//loadOthers();
 	
 	if(!isset($_GET['c']) || !isset($_GET['a']))  {
-		//Feedback::do404();
-		//die();
+		Feedback::do404();
+		die();
 	} else {
 	
 		$controller = $_GET['c'];
@@ -35,10 +35,10 @@
 		echo 'action: ' . $action . '<br />';
 		echo 'input: ' . $input . '<br />';
 		
-		//Router::doRouting($controller, $action, $input);
+		Router::doRouting($controller, $action, $input);
 	}
 	
-	require_once(DS_PATH . '/core/includes/view.php');
+	//require_once(DS_PATH . '/core/includes/view.php');
 	
 	DB::close();
 ?>
