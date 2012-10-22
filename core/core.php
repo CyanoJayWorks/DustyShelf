@@ -29,13 +29,13 @@
 	
 		$controller = $_GET['c'];
 		$action = $_GET['a'];
-		$input = isset($_GET['i']) ? $_GET['i'] : '';
+		$args = isset($_GET['i']) ? $_GET['i'] : '';
 		
 		echo 'controller: ' . $controller . '<br />';
 		echo 'action: ' . $action . '<br />';
-		echo 'input: ' . $input . '<br />';
+		echo 'arguments: ' . $args . '<br />';
 		
-		Router::doRouting($controller, $action, $input);
+		Router::doRouting($controller, $action, $args);
 	}
 	
 	//require_once(DS_PATH . '/core/includes/view.php');

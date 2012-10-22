@@ -4,7 +4,7 @@
 
 		}
 		
-		public function handleRequest($action, $inputs) {
+		public function handleRequest($action, $args) {
 			echo 'Blog Post Controller Invoked</br>';
 			$blogPostModel = new BlogPostModel();
 			$blogPostModel->invokeModel();

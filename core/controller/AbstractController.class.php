@@ -1,5 +1,5 @@
 <?php
     abstract class AbstractController {
-		public abstract function handleRequest($action, $inputs);
+		public abstract function handleRequest($action, $args);
 	}
 ?>
