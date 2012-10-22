@@ -10,6 +10,16 @@
 			
 			$rawSize = count($raw);	
 			
+			if($rawSize % 2 != 0) {
+				if($raw[$rawSize-1] == '') {
+					array_pop($raw);
+					$rawSize--;
+				} else {
+					Feedback::do404();
+					die();
+				}
+			} 
+			
 			$keysCount = 0;
 			$valsCount = 0;
 			
