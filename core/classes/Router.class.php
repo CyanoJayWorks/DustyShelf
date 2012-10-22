@@ -16,7 +16,6 @@
 					$rawSize--;
 				} else {
 					Feedback::do404();
-					die();
 				}
 			} 
 			
