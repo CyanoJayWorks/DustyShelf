@@ -13,6 +13,7 @@
 					break;
 				default:
 					Feedback::do404();
+					die();
 					break;
 			}
 			

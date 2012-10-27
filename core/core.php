@@ -25,6 +25,7 @@
 	
 	if(!isset($_GET['c']) || !isset($_GET['a']))  {
 		Feedback::do404();
+		die();
 	} else {
 	
 		$controller = $_GET['c'];
