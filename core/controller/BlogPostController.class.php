@@ -5,9 +5,23 @@
 		}
 		
 		public function handleRequest($action, $args) {
-			echo 'Blog Post Controller Invoked</br>';
+			echo '<br /> Blog Post Controller Invoked <br />';
+			
+			switch($action) {
+				case "view":
+					self::viewAction();
+					break;
+				default:
+					Feedback::do404();
+					break;
+			}
+			
 			$blogPostModel = new BlogPostModel();
 			$blogPostModel->invokeModel();
+		}
+		
+		private function viewAction() {
+			echo 'View Action on Controller';
 		}
 	}
 ?>
