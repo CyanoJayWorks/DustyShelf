@@ -3,6 +3,9 @@
 		define('DS_PATH', dirname(__FILE__));
 	}
 	
+	ini_set('display_errors','On');
+ 	error_reporting(E_ALL);
+	
 	/**
 	 * Apache URL Rewrite Settings (place in .htaccess in DustyShelf root folder):
 	 * ==============================
