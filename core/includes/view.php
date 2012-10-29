@@ -31,7 +31,7 @@
 						foreach ($results as $key => $value) {
 							echo '<div class="blogpost">';
 							echo '<div class="blogposttitle">';
-							echo '<h4>' . $value['title'] . '</h4>';
+							echo '<p>' . $value['title'] . '</p>';
 							echo '</div>';
 							echo '<div class="blogposttag">';
 							echo $value['tags'] . '<hr />';

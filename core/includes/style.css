@@ -90,7 +90,7 @@ body {
     -moz-transition: background-color .2s ease-in-out;
     -webkit-transition: background-color .2s ease-in-out;
     
-	font-family: "Century Gothic", Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-size: smaller;
 }
 
@@ -99,14 +99,17 @@ body {
 }
 
 .blogposttitle {
-	font-size: 16px;
+	font-size: 18px;
 	font-family: "Century Gothic", Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-style: italic;
 	
 	line-height: 0.5;
 }
 
 .blogposttag {
-	font-size: 10px;
+	font-family: "Century Gothic";
+	font-size: 12px;
+	
 	line-height: 0.5;
 }
 
