@@ -1,9 +1,9 @@
 body {
-	background-color: #E6E6E6
+	background-color: #E6E6E6;
 }
 
 .header {
-	font-family: Verdana;
+	font-family: "Century Gothic";
 	line-height: 5px;
 }
 
@@ -15,7 +15,7 @@ body {
     -webkit-transition: color .2s ease-in-out;
     
     display: inline;
-    font-size: 28px;
+    font-size: 32px;
     text-decoration: none
 }
 
@@ -90,7 +90,7 @@ body {
     -moz-transition: background-color .2s ease-in-out;
     -webkit-transition: background-color .2s ease-in-out;
     
-	font-family: Verdana;
+	font-family: "Century Gothic";
 	font-size: smaller;
 }
 
@@ -99,7 +99,9 @@ body {
 }
 
 .blogposttitle {
-	font-size: 12px;
+	font-size: 16px;
+	font-family: "Century Gothic";
+	
 	line-height: 0.5;
 }
 
@@ -129,7 +131,7 @@ body {
     -moz-transition: background-color .2s ease-in-out;
     -webkit-transition: background-color .2s ease-in-out;
     
-    font-family: Verdana;
+    font-family: "Century Gothic";
     font-size: small;
 }
 
