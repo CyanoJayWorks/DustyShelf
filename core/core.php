@@ -24,7 +24,7 @@
 	
 	
 	if(!isset($_GET['c']) || !isset($_GET['a']))  {
-		Feedback::do404();
+		require_once(DS_PATH . '/core/includes/view.php');
 		die();
 	} else {
 	
@@ -35,11 +35,6 @@
 		echo 'controller: ' . $controller . '<br />';
 		echo 'action: ' . $action . '<br />';
 		echo 'arguments: ' . $args . '<br />';
-		
-		if($controller == 'blogtest')  {
-			require_once(DS_PATH . '/core/includes/view.php');
-			die();
-		}
 		
 		Router::doRouting($controller, $action, $args);
 	}
