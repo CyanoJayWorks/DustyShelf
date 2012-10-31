@@ -19,7 +19,7 @@
 					<?php  echo BlogInfo::getBlogTitle(); ?>
 				</a>
 				
-				<h4><?php echo BlogInfo::getBlogTitleDescription(); ?></h4>
+				<p><?php echo BlogInfo::getBlogTitleDescription(); ?></p>
 			</div>
 			
 			<div id="blogcontent">
