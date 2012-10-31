@@ -26,6 +26,8 @@ body {
 .header p {
 	color: gray;
 	
+	margin-top: 1.5%;
+	
 	letter-spacing: 1px;
 	font-size: smaller;
 }
