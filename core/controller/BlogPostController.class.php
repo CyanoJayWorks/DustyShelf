@@ -16,9 +16,6 @@
 					die();
 					break;
 			}
-			
-			$blogPostModel = new BlogPostModel();
-			$blogPostModel->invokeModel();
 		}
 		
 		private function viewAction() {

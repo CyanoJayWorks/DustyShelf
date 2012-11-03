@@ -43,7 +43,6 @@
 			switch ($controller) {
 				case 'page':
 					$reqHandler = new BlogPostController();
-					$reqHandler->handleRequest($action, $args);
 					break;
 				case 'admin':
 					
@@ -59,6 +58,8 @@
 					die();
 					break;
 			}
+			
+			$reqHandler->handleRequest($action, $args);
 		}
 	}
 ?>
