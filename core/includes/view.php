@@ -26,7 +26,7 @@
 				<img id="headerimg" src="<?php echo BlogInfo::getBlogHeaderImage(); ?>" href="<?php echo BlogInfo::getBlogHeaderImage(); ?>"/>
 				<div class="blogbody">
 					<?php
-						$results = DB::executeResultQuery('SELECT body,title,tags,date FROM posts');
+						$results = array_reverse(DB::executeResultQuery('SELECT body,title,tags,date FROM posts'), true);
 						
 						foreach ($results as $key => $value) {
 							echo '<div class="blogpost">';
