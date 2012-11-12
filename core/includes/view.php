@@ -26,7 +26,7 @@
 				<img id="headerimg" src="<?php echo BlogInfo::getBlogHeaderImage(); ?>" href="<?php echo BlogInfo::getBlogHeaderImage(); ?>"/>
 				<div class="blogbody">
 					<?php
-						$results = DB::executeResultQuery('SELECT body,title,tags FROM posts');
+						$results = DB::executeResultQuery('SELECT body,title,tags,date FROM posts');
 						
 						foreach ($results as $key => $value) {
 							echo '<div class="blogpost">';
@@ -34,6 +34,7 @@
 							echo '<p>' . $value['title'] . '</p>';
 							echo '</div>';
 							echo '<div class="blogposttag">';
+							echo $value['date'] . '<br />' . '<br />';
 							echo $value['tags'] . '<hr />';
 							echo '</div>';
 							echo $value['body'];
